@@ -1,0 +1,20 @@
+services:
+  DB_Postgres:
+    image: postgres:15 # Use uma versão específica para maior controle
+    container_name: route_wise
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - delivery_network
+
+volumes:
+  postgres_data:
+
+networks:
+  delivery_network:
+    driver: bridge
