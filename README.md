@@ -22,3 +22,16 @@ RouteWise é uma plataforma de gerenciamento e agendamento de rotas para serviç
     Frontend: React, TypeScript, TailWindCSS, Google Maps JS SDK
 
     Ambiente: Docker, Docker Compose, Render (deploy sugerido)
+
+
+## Como Rodar o Projeto Localmente
+
+1. **Clone o repositório:**
+
+   ```bash
+   git clone git@github.com:EduardoCostaMaciel/RouteWise.git
+   cd RouteWise
+      comando
+         - docker-compose up -d
+         - docker-compose down
+   ```

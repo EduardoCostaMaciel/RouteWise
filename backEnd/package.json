@@ -1,0 +1,46 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.ts",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node build/index.js",
+    "typeorm": "typeorm",
+    "dbCreate": "npx sequelize db:create",
+    "dbCreate-cli": "npx sequelize-cli db:create",
+    "dbDelete-cli": "npx sequelize-cli db:drop",
+    "migrate": "npx sequelize-cli db:migrate",
+    "migrate-undo": "npx sequelize-cli db:migrate:undo:all",
+    "seed-all": "npx sequelize-cli db:seed:all",
+    "seed-undo": "npx sequelize-cli db:seed:undo:all",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.4.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "joi": "^17.13.3",
+    "pg": "^8.15.6",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.1",
+    "@types/googlemaps": "^3.43.3",
+    "@types/joi": "^17.2.3",
+    "@types/node": "^22.15.17",
+    "@types/pg": "^8.15.1",
+    "@types/sequelize": "^4.28.20",
+    "sequelize-cli": "^6.6.3",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}
