@@ -10,11 +10,11 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     networks:
-      - delivery_network
+      - route_wise_network
 
 volumes:
   postgres_data:
 
 networks:
-  delivery_network:
-    driver: bridge
+  route_wise_network:
+    driver: bridg
