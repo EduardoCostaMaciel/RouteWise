@@ -13,9 +13,10 @@
     "typeorm": "typeorm",
     "dbCreate": "npx sequelize db:create",
     "dbCreate-cli": "npx sequelize-cli db:create",
-    "dbDelete-cli": "npx sequelize-cli db:drop",
+    "dbDrop-cli": "npx sequelize-cli db:drop",
     "migrate": "npx sequelize-cli db:migrate",
     "migrate-undo": "npx sequelize-cli db:migrate:undo:all",
+    "seed": "npx sequelize-cli db:seed --seed",
     "seed-all": "npx sequelize-cli db:seed:all",
     "seed-undo": "npx sequelize-cli db:seed:undo:all",
     "test": "jest"

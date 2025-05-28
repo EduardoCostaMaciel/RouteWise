@@ -17,4 +17,4 @@ volumes:
 
 networks:
   route_wise_network:
-    driver: bridg
+    driver: bridge

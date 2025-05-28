@@ -1,14 +1,6 @@
 // .sequelizerc
 
 const path = require("path");
-// const resolve = require("node:path");
-
-// module.exports = {
-//   config: path.resolve(__dirname, "build", "config", "database.js"),
-//   "models-path": path.resolve(__dirname, "build", "db", "models"),
-//   "migrations-path": path.resolve(__dirname, "src", "db", "migrations"),
-//   "seeders-path": path.resolve(__dirname, "src", "db", "seeders"),
-// };
 
 module.exports = {
   config: path.resolve(__dirname, "src", "db", "config", "database.js"),
